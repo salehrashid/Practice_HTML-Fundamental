@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pertemuan 2 (4.oct.22)</title>
+</head>
+
+<body>
+    <!-- ordered list -->
+    <h1>Nama Hewan (tag: ol)</h1>
+    <ol>
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+
+    <ol type="A">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+
+    <ol type="I">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+
+    <ol type="i">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+
+    <ol type="a">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ol>
+
+    <!-- unordered list -->
+    <h1>Nama Artis (tag: ul)</h1>
+    <ul>
+        <li>ariel</li>
+        <li>luna maya</li>
+        <li>anya geraldine</li>
+        <li>gisel</li>
+        <li>ahmad rafi</li>
+    </ul>
+
+    <ul type="square">
+        <li>ariel</li>
+        <li>luna maya</li>
+        <li>anya geraldine</li>
+        <li>gisel</li>
+        <li>ahmad rafi</li>
+    </ul>
+
+    <ul type="none">
+        <li>ariel</li>
+        <li>luna maya</li>
+        <li>anya geraldine</li>
+        <li>gisel</li>
+        <li>ahmad rafi</li>
+    </ul>
+
+    <ul style="list-style-image: url(images/favicon.ico);">
+        <li>Kucing</li>
+        <li>Kuda</li>
+        <li>Jerapah</li>
+        <li>Keledai</li>
+    </ul>
+
+    <!-- table -->
+    <h1>Table</h1>
+    <table border="3" width="400">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Asal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Saleh Rashid</td>
+                <td>Brebes</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Yogi Chandra</td>
+                <td>Brebes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- Menggunakan rowspan serta colspan -->
+    <table border="3" width="400">
+        <thead>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Nama</th>
+                <th rowspan="2">Asal</th>
+                <th colspan="2">Fisik</th>
+            </tr>
+            <tr>
+                <th>tinggi badan</th>
+                <th>berat badan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Yogi Chandra</td>
+                <td>Brebes</td>
+                <td>12 kg</td>
+                <td>123 cm</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- Menggabungkan table dengan element -->
+    <table border="3" width="400">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>foto</th>
+                <th>hobi</th>
+                <th>game</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>fatiha rahma amalia</td>
+                <td><img src="https://idn.sch.id/wp-content/uploads/2021/01/new-idn.png" alt="Sekolah IDN"></td>
+                <td>
+                    <ul>
+                        <li>bola</li>
+                        <li>bulu tangkis</li>
+                        <li>kasti</li>
+                    </ul>
+                </td>
+                <td>ML</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <table border="3" width="400">
+        <tr>
+            <th colspan="4">daftar siswa SMK</th>
+        </tr>
+        <tr>
+            <td rowspan="4">1</td>
+            <td rowspan="4"><img src="images/random.png"></td>
+        </tr>
+        <tr>
+            <td>nama siswa</td>
+            <td>saleh</td>
+        </tr>
+        <tr>
+            <td>nomor NIS</td>
+            <td>12345678</td>
+        </tr>
+        <tr>
+            <td>hobi</td>
+            <td>
+                <ul>
+                    <li>bulu tangkis</li>
+                    <li>ngoding</li>
+                    <li>game</li>
+                    <li>marathon anime</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- custom sendiri -->
+    <table border="3" width="800">
+        <thead>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Foto</th>
+                <th rowspan="2">Nama</th>
+                <th rowspan="2">NIS</th>
+                <th colspan="4">Nilai</th>
+                <th rowspan="4">Hobby</th>
+            </tr>
+            <tr>
+                <th>B indo</th>
+                <th>B arab</th>
+                <th>IPA</th>
+                <th>IPS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="images/random.png" style="border-radius: 6em"></td>
+                <td>Rahma</td>
+                <td>4657899</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>90</td>
+                <td>
+                    <ol type="i">
+                        <li>lari</li>
+                        <li>marathon anime</li>
+                        <li>bulu tangkis</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="images/random.png" style="border-radius: 6em"></td>
+                <td>Saleh</td>
+                <td>0987654</td>
+                <td>80</td>
+                <td>80</td>
+                <td>80</td>
+                <td>80</td>
+                <td>
+                    <ol type="i">
+                        <li>lari</li>
+                        <li>marathon anime</li>
+                        <li>bulu tangkis</li>
+                    </ol>
+                </td>
+            </tr>
+            <td colspan="4" style="text-align: center">total nilai</td>
+            <td colspan="1">100</td>
+            <td colspan="1">100</td>
+            <td colspan="1">100</td>
+            <td colspan="1">100</td>
+        </tbody>
+    </table>
+</body>
+
+</html>

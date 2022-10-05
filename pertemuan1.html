@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="refresh" content="5"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pertemuan 1 (3.oct.22)</title>
+</head>
+<body>
+	<script>
+		function result(){
+			var formNama = document.forms["myForm"]["formName"].value
+			var formNis = document.forms["myForm"]["formNis"].value
+			var formTanggalLahir = document.forms["myForm"]["formTanggalLahir"].value
+			var formJenisKelamin = document.forms["myForm"]["formJenisKelamin"].value
+			if (formNama == ""){
+				alert("nama wajib diisi")
+				return false
+			} 
+
+			if (formNis == ""){
+				alert("nis wajib diisi")
+				return false
+			}
+
+			if (formTanggalLahir == ""){
+				alert("tanggal lahir wajib diisi")
+				return false
+			}
+
+			if (formJenisKelamin == ""){
+				alert("pilih jenis kelamin")
+				return false
+			}
+			
+			// alert('nama kamu: ' + document.getElementById('nama').value + 
+			// 'nis kamu: ' + document.getElementById('nis').value + 
+			// 'tanggal lahir: ' + document.getElementById('tanggal_lahir').value +  
+			// 'jenis kelamin: ' + document.getElementById('jengkel').value + 
+			// 'agama: ' + document.getElementById('agama').value + '')
+		}
+	</script>
+
+	<form name="myForm" onsubmit="return result()" method="post">
+		<h2>Form Siswa</h2>
+		<!-- nama -->
+		<div style="margin-bottom: 6px;">
+			<label>Nama: </label>
+			<input type="text" id="nama" name="formName" placeholder="Silahkan isi nama" value="">
+		</div>
+
+		<!-- NIS -->
+		<div style="margin-bottom: 6px;">
+			<label>NIS: </label>
+			<input type="number" name="formNis" placeholder="Silahkan isi nis" id="nis" value="">
+		</div>
+		
+		<!-- tanggal lahir -->
+		<div style="margin-bottom: 6px;">
+			<label>Tanggal lahir: </label>
+			<input type="date" id="tanggal_lahir" value="" name="formTanggalLahir">
+		</div>
+		
+		<!-- jenis kelamin -->
+		<div style="margin-bottom: 6px;">
+			<label>Jenis kelamin </label>
+			<select required id="jengkel" name="formJenisKelamin">
+				<option selected value="">pilih jenis kelamin</option>
+				<option value="laki-laki">laki-laki</option>
+				<option value="perempuan">perempuan</option>
+			</select>
+		</div>
+
+		<!-- agama -->
+		<div style="margin-bottom: 6px;">
+			<label>Agama: </label>
+			<input type="text" value="islam" readonly id="agama" value="">
+		</div>
+		
+		<input type="reset" name="">
+		<button type="submit" onclick="result();">Oke</button>
+	</form>
+</body>
+</html>
