@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/random.png">
+    <title>pertemuan 1 (7.oct.22)</title>
+</head>
+
+<style>
+    .margin-href {
+        margin: 6px;
+    }
+
+    #margin-image {
+        margin: 20px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body>
+    <h1>Link</h1>
+
+    <!-- external link -->
+
+    <!-- penjelasan link target 
+        _blank: saat link itu di klik maka akan membuka tab baru
+       
+        _top: untuk membuka link di frame paling atas (paling luar).
+              secara simpel-nya :
+              jika di website(1) di dalamnya ada website(2) lalu di website(2) di dalamnya ada website (3) lalu di website (3) ini ada link dan kita klik, maka link akan terbuka di website(1)
+       
+        _parent: untuk membuka link di frame yang satu tingkat di atas frame link tersebut berada.
+                 secara simple-nya begini :
+                 jika di website(1) di dalamnya ada website(2) lalu di website(2) ini ada link dan kita klik, maka link akan terbuka di website(1)
+        
+        _self: saat kita mengklik link tersebut, page selanjutnya akan mencul di page itu sendiri "tidak membuka tab baru"
+    -->
+
+    <a href="pertemuan2.html" target="_blank">internal link (_blank)</a>
+    <br>
+    <a href="pertemuan2.html" target="_top">internal link (_top)</a>
+    <br>
+    <a href="pertemuan2.html" target="_parent">internal link (_parent)</a>
+    <br>
+    <a href="pertemuan2.html" target="_self">internal link (_self)</a>
+
+    <!-- contoh nama frame -->
+
+    <br>
+
+    <a href="https://idn.sch.id/" target="frameIDN">klik link</a>
+    <br>
+    <iframe name="frameIDN" width="600" height="400"></iframe>
+
+    <!-- download -->
+    <p>link download <br> <a href="test.zip" download="">download foto</a></p>
+
+
+    <!-- redirect ke page sosmed ku -->
+    <p>email saya <br> <a href="mailto:saleh.rashid.b@gmail.com">link email</a></p>
+    <p>wa gua <br> <a href="https://wa.me/62895380230034">kontakan yuk</a></p>
+    <p>channel gua<br> <a href="https://www.youtube.com/channel/UChLxnrCBFKSWTF_xI3QlPJA" target="_blank">youtube</a>
+    </p>
+    <p>linkedin gua<br> <a href="https://www.linkedin.com/in/saleh-r-babsel-24541521a/" target="_blank">linkedin</a></p>
+    <p>github gua<br> <a href="https://github.com/salehrashid" target="_blank">github</a></p>
+    <p>medium gua<br> <a href="https://medium.com/@saleh.rashid.b" target="_blank">medium</a></p>
+
+    <center>
+        <a href="profile" class="margin-href" id="profile">Profile</a>
+        <a href="#informasi" class="margin-href" id="btnInformasi">informasi</a>
+    </center>
+
+    <section id="lorem-ipsum">
+        <h1>detail</h1>
+        <p style="text-indent: 49px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, magni. Recusandae,
+            veniam! Ab dolorum quo quaerat magnam voluptatum labore modi neque sequi, voluptatem officiis eum rerum,
+            repellendus eos facere asperiores.</p>
+        <hr>
+    </section>
+
+    <section id="lorem-ipsum">
+        <h1>profile</h1>
+        <p style="text-indent: 49px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, magni. Recusandae,
+            veniam! Ab dolorum quo quaerat magnam voluptatum labore modi neque sequi, voluptatem officiis eum rerum,
+            repellendus eos facere asperiores.</p>
+        <hr>
+    </section>
+
+    <section id="informasi">
+        <h1><a href="#profile" id="informasiHref">informasi</a></h1>
+        <p style="text-indent: 49px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, magni. Recusandae,
+            veniam! Ab dolorum quo quaerat magnam voluptatum labore modi neque sequi, voluptatem officiis eum rerum,
+            repellendus eos facere asperiores.</p>
+        <br>
+
+        <center>
+            <img src="/images/random.png" style="border-radius: 10px" id="margin-image">
+            <img src="/images/random.png" style="border-radius: 10px" id="margin-image">
+        </center>
+        <hr>
+    </section>
+
+    <section>
+        <h1>kontak</h1>
+        <p style="text-indent: 49px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, magni. Recusandae,
+            veniam! Ab dolorum quo quaerat magnam voluptatum labore modi neque sequi, voluptatem officiis eum rerum,
+            repellendus eos facere asperiores.</p>
+        <br>
+
+        <center>
+            <img src="/images/random.png" style="border-radius: 10px" id="margin-image">
+            <img src="/images/random.png" style="border-radius: 10px" id="margin-image">
+        </center>
+        <hr>
+    </section>
+
+    <script>
+        var informasiBtn = document.getElementById('btnInformasi')
+        var informasiTitle = document.getElementById('informasiHref')
+        informasiBtn.addEventListener('click' , function onClick(event){
+            informasiTitle.style.color = 'red'
+        })
+        informasiTitle.addEventListener('click' , function onClick(event){
+            event.target.style.color = 'gray'
+        })
+    </script>
+
+</body>
+
+</html>
