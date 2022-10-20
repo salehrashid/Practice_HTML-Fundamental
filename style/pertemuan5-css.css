@@ -1,0 +1,71 @@
+.example2 {
+    color: firebrick;
+    font-weight: bold;
+}
+
+.border-1 {
+    height: 150px;
+    width: 150px;
+    border: 6px solid aqua;
+    border-top-left-radius: 300px;
+}
+
+.border-1:hover {
+    background-image: url("../images/random.png");
+    background-size: cover;
+}
+
+.border-2 {
+    height: 150px;
+    width: 150px;
+    border: 6px solid aqua;
+    background: none;
+    border-radius: 200px;
+}
+
+.border-2:hover {
+    background-image: url("../images/random.png");
+    background-size: cover;
+}
+
+.border-3 {
+    height: 150px;
+    width: 150px;
+    border: 6px solid aqua;
+    background: none;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.border-3:hover {
+    background-image: url("../images/random.png");
+    background-size: cover;
+}
+
+.border-4 {
+    height: 150px;
+    width: 150px;
+    border: 6px solid aqua;
+    background: none;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.border-4:hover {
+    background-image: url("../images/random.png");
+    background-size: cover;
+}
+
+.border-5 {
+    height: 150px;
+    width: 150px;
+    border: 6px solid aqua;
+    background: none;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.border-5:hover {
+    background-image: url("../images/random.png");
+    background-size: cover;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pertemuan5-inline-css (17.oct.22)</title>
+    <link rel="stylesheet" href="../style/pertemuan5-css.css">
+
+    <style>
+        .example {
+            color: cyan;
+            font-weight: bold;
+        }
+
+        #id {
+            color: blue;
+        }
+
+        .class {
+            color: aquamarine;
+        }
+
+        p {
+            color: springgreen;
+        }
+
+        input[type=text] {
+            background: none;
+            color: brown;
+        }
+
+        a:hover{
+            color: springgreen;
+        }
+
+        p::first-line{
+            color: blue;
+        }
+
+        .border-r{
+            border: 1px solid red;
+            border-radius: 50px 20px;
+            background-size: cover;
+            background-image: url("../images/random.png");
+            height: 100px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<!--internal css-->
+<h1 class="example">ini contoh internal css</h1>
+
+<!--inline css-->
+<h1 style="color: blue">ini contoh inline css</h1>
+
+<!--external css-->
+<h1 class="example2">ini contoh external css</h1>
+
+<!--contoh selector ID-->
+<h2 class="class">ini pemanggilan dengan class</h2>
+
+<!--contoh selector class-->
+<h2 id="id">ini pemanggilan dengan ID</h2>
+
+<!--contoh pemanggilan dengan nama element-->
+<p>contoh pemanggilan dengan nama element</p>
+
+<!--contoh pemanggilan dengan memakai atribut-->
+<input type="text" placeholder="isi text tersebut"/>
+
+<br>
+
+<!--contoh pseuso class-->
+<a href="#">ini adalah pseudo class</a>
+<p><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+
+<!--border radius-->
+<div class="border-r"></div>
+
+<br>
+<br>
+
+<div class="border-1"></div>
+<br>
+<div class="border-2"></div>
+<br>
+<div class="border-3"></div>
+<br>
+<div class="border-4"></div>
+<br>
+<div class="border-5"></div>
+</body>
+</html>

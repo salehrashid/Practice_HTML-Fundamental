@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Poppins';
+}
+
+#video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    height: 100vh;
+    /*background-image: url("../images/space-shuttle.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 25px;
+    width: 20em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    height: 15em;
+}
+
+.container h1{
+    margin-bottom: 20px;
+    color: white;
+}
+
+input{
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    width: 20em;
+    margin-bottom: 10px;
+    border: black solid 1px;
+}
+
+button{
+    width: 21.3em;
+    height: 40px;
+    border-radius: 15px;
+    border: black solid 1px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: gray;
+    color: white;
+}
